@@ -1,4 +1,4 @@
 tasks:
   - before: bash -c "sudo curl https://get.ignite.com/cli! | sudo bash"
     init: sudo bash -c "/usr/local/bin/ignite completion bash > /etc/bash_completion.d/ignite" && /usr/local/bin/ignite scaffold chain chain && rm -rf README.md && mv chain/* chain/.* . 2>/dev/null; true && rm -rf chain 2>/dev/null; true
-    command: clear && echo "CLI Installed, New Project Scaffolded, Ready to go!"
+    command: clear && echo "CLI Installed, New Project Scaffolded, Ready to go!" && bash
